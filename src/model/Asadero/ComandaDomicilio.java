@@ -12,6 +12,6 @@ public class ComandaDomicilio extends Comanda {
 
     @Override
     public double calcularTotal() {
-        return subtotal + (costoEnvio != null ? costoEnvio : 0.0);
+        return subtotal + costoEnvio;
     }
 }
